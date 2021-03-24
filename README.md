@@ -1,1 +1,1 @@
-# 2stable
+# 2stable.com
