@@ -21,7 +21,9 @@
 title: 2Stable
 email: support@2stable.com
 description: >- # this means to ignore newlines until "baseurl:"
-  We are 2Stable, a team of four
+  We are a starting company of 4 members with big ambitions, we provide our creative solution to the day-to-day problems. 
+  "Create easy, gorgeous, and secure projects or don’t create anything." 
+  This is our working philosophy and we try to transmit this idea with every line of code we write.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
@@ -31,6 +33,21 @@ github_username:  2stable
 theme: minima
 plugins:
   - jekyll-feed
+
+authenticator: 
+  - src: https://one-badge.com/b/apple/appstore.svg
+    alt: iOS Apple App Badge
+    url: https://apps.apple.com/app/apple-store/id1538761576?pt=122171064&ct=2stable.com.iPhone&mt=8#?platform=iphone
+
+  - src: https://one-badge.com/b/apple/mac.svg
+    alt: macOS Apple App Badge
+    url: https://apps.apple.com/app/apple-store/id1538761576?pt=122171064&ct=2stable.com.mac&mt=8#?platform=mac
+
+aso: 
+  - src: https://one-badge.com/b/apple/mac.svg
+    alt: macOS Apple App Badge
+    url: https://apps.apple.com/app/apple-store/id1538761576?pt=122171064&ct=2stable.com.mac&mt=8#?platform=mac
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

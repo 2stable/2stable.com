@@ -1,9 +1,50 @@
+
 <main class="px-5">
-  <h1>Welcome </h1>
-  <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+  <div class="row justify-content-center mb-2 pb-md-5">
+    <div class="col-md-8">
+      <h1>Welcome 👋</h1>
+      <p class="lead">{{ site.description }}</p>
+    </div>
+</div>
 </main>
 
 <div class="row">
-  <div class="col">Authenticator</div>
-  <div class="col">ASO</div>
+  <div class="col-md-6">
+    <div class="p-5 border rounded h-100">
+      <p><img class="rounded-img shadow-sm" src="/assets/auth-Icon-1024.png" width="128" alt=""></p>
+      <p class="fw-bold h3">Authentictor</p>
+      <a class="icon-link pb-3" href="https://authenticator.2stable.com" style="text-decoration: none;">authenticator.2stable.com
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/><symbol id="chevron-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+        </symbol></svg>
+      </a>
+      <p class="m-0">
+      {% for app in site.authenticator %}    
+      <a href="{{ app.url }}" style="text-decoration: none;" target="_blank">
+        <img class="m-2" src="{{ app.src }}" alt="{{ app.alt }}" height="54px">
+      </a>
+      {% endfor %}
+      </p>
+    </div>
+  </div>
+  <div class="col-md-6 text-center ">
+    <div class="p-5 bg-light border rounded h-100">
+      <p><img class="rounded-img shadow-sm" src="/assets/aso-Icon-1024.png" width="128" alt=""></p>
+      <p class="fw-bold h3">ASO</p>
+      <a class="icon-link pb-3" href="https://aso.2stable.com" style="text-decoration: none;">aso.2stable.com
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/><symbol id="chevron-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+        </symbol></svg>
+      </a>
+      <p class="m-0">
+        {% for app in site.aso %}    
+        <a href="{{ app.url }}" style="text-decoration: none;" target="_blank">
+          <img class="m-2" src="{{ app.src }}" alt="{{ app.alt }}" height="54px">
+        </a>
+        {% endfor %}
+      </p>
+    </div>
+  </div>
 </div>
+
+
