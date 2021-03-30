@@ -49,7 +49,7 @@ authenticator:
 aso: 
   - src: https://one-badge.com/b/apple/mac.svg
     alt: macOS Apple App Badge
-    url: https://apps.apple.com/app/apple-store/id1538761576?pt=122171064&ct=2stable.com.mac&mt=8#?platform=mac
+    url: https://apps.apple.com/app/apple-store/id1559277129?pt=122171064&ct=2stable.com.mac&mt=8#?platform=mac
 
 
 # Exclude from processing.
