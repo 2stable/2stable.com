@@ -173,12 +173,18 @@
   display: inline-flex;
   align-items: center;
 }
+
 .icon-link > .bi {
   margin-top: .125rem;
   margin-left: .125rem;
   transition: transform .25s ease-in-out;
   fill: currentColor;
 }
+
+a > .icon-link:hover {
+  text-decoration: none;
+}
+
 .icon-link:hover > .bi {
   transform: translate(.25rem);
 }
